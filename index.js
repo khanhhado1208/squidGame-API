@@ -26,6 +26,11 @@ app.get('/api/quotes', (req, res) => {
   res.json(quotes); // Get all quotes
 });
 
+app.get('/api/random', (req, res)=>{
+  const randomIndex = Math.floor(Math.random() * quotes.length); // random quote
+  res.json(quotes[randomIndex]);
+})
+
 app.get('/api/:id', (req, res)=>{
     const id = parseInt(req.params.id); //  Get Id from URL
     const quote = quotes.find(q=>q.id === id); // find correspoding id
@@ -35,7 +40,6 @@ app.get('/api/:id', (req, res)=>{
         res.status(404).json({ message: "Quote not found" }); //show error
       }
 })
-
 
 
 
