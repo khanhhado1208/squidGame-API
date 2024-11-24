@@ -1,6 +1,9 @@
 # Squid Game Quotes API
 This API provides random quotes from the Squid Game series.
 
+### Get all random quotes
+`GET /api/quotes'`
+
 ### Get a random quote
 `GET /api/:id'`
 
