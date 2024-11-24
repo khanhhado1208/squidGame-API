@@ -22,7 +22,10 @@ const quotes = [
 ];
 
   
-  
+app.get('/api/quotes', (req, res) => {
+  res.json(quotes); // Get all quotes
+});
+
 app.get('/api/:id', (req, res)=>{
     const id = parseInt(req.params.id); //  Get Id from URL
     const quote = quotes.find(q=>q.id === id); // find correspoding id
@@ -33,9 +36,7 @@ app.get('/api/:id', (req, res)=>{
       }
 })
 
-app.get('/api/quotes', (req, res) => {
-  res.json(quotes);
-});
+
 
 
 const PORT = process.env.PORT || 5000;
