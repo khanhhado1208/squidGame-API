@@ -4,7 +4,10 @@ This API provides random quotes from the Squid Game series.
 ### Get all random quotes
 `GET /api/quotes'`
 
-### Get a random quote
+### Get all random quotes
+`GET /api/random'`
+
+### Get a specific quote by id
 `GET /api/:id'`
 
 #### Response
