@@ -11,6 +11,6 @@ This API provides random quotes from the Squid Game series.
   "character": "Kang Sae-Byeok"
 }
 #### How to run the project
-Clone the repository.
-Run npm install.
-Start the server: node index.js.
+###### Clone the repository.
+###### Run npm install.
+###### Start the server: node index.js.
